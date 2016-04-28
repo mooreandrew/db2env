@@ -1,5 +1,15 @@
+
+if [ ! -f /vagrant/IBM-MQ-Light-Linux-x64-developer-1.0.2.0-L151130.2.tar.gz ]; then
+    curl -o /vagrant/IBM-MQ-Light-Linux-x64-developer-1.0.2.0-L151130.2.tar.gz https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqkoa/1.0/IBM-MQ-Light-Linux-x64-developer-1.0.2.0-L151130.2.tar.gz
+fi
+
+if [ ! -f /vagrant/v10.5_linuxx64_expc.tar  ]; then
+  echo "v10.5_linuxx64_expc.tar could not be found"
+  exit 1
+fi
+
 tar xf /vagrant/v10.5_linuxx64_expc.tar --overwrite
-tar xf /vagrant/IBM-MQ-Light-Linux-x64-developer-1.0.2.0-L151130.2-2.tar --overwrite
+tar xf /vagrant/IBM-MQ-Light-Linux-x64-developer-1.0.2.0-L151130.2.tar.gz --overwrite
 
 yum upgrade -y
 setenforce 0
