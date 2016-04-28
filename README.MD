@@ -7,6 +7,15 @@ https://www-01.ibm.com/marketing/iwm/iwm/web/pick.do?source=swg-db2expressc&S_TA
 
 Place the downloaded file into this folder.
 
+and
+
+Download IBM MQ Light Linux (64bit) v1.0.2 from:
+
+https://developer.ibm.com/messaging/ibm-mq-light-downloads/
+
+Place the downloaded file into this folder.
+
+
 Then run:
 
 ```
